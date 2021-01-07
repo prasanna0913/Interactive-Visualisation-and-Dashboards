@@ -81,4 +81,32 @@ function buildCharts(selectedMetaData, otuIds, otuValues, otuLabels) {
 
     // Plot the chart to a div tag with id "bar-plot"
     Plotly.newPlot("bar", data, layout);
+
+    // create bubble chart
+    var trace2 = {
+        x: otuIds,
+        y: otuValues,
+        mode: "markers",
+        marker: {
+            size: otuValues,
+            color: otuIds,
+        },
+        text: otuLabels,
+    };
+
+    var data = [trace2];
+
+    var layout = {
+        title: "All OTU's Sample Value",
+        height: 500,
+        width: 1050,
+        xaxis: {
+            title: "OTU IDs",
+        },
+        yaxis: {
+            title: "Sample Values",
+        },
+    };
+    Plotly.newPlot("bubble", data, layout);
+
 }
