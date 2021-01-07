@@ -109,4 +109,19 @@ function buildCharts(selectedMetaData, otuIds, otuValues, otuLabels) {
     };
     Plotly.newPlot("bubble", data, layout);
 
+    //  gauge cart
+    var data = [
+        {
+            domain: { x: [0, 9], y: [0, 9] },
+            value: selectedMetaData[0].wfreq,
+            title: { text: "Wash Frequency of an Individual" },
+            type: "indicator",
+            mode: "gauge+number"
+        }
+    ];
+
+    var layout = { width: 600, height: 500, margin: { t: 0, b: 0 } };
+    Plotly.newPlot('gauge', data, layout);
+
+
 }
