@@ -52,8 +52,33 @@ function buildMetadata(selectedMetaData) {
     }
 }
 
+//  Step4 : build chaerts with the supplied data
+function buildCharts(selectedMetaData, otuIds, otuValues, otuLabels) {
+    //  bar chart
+    var trace1 = {
+        x: otuValues,
+        y: otuIds,
+        type: "bar",
+        orientation: "h"
 
+    };
+    // Create the data array for the plot
+    var data = [trace1];
 
+    // Define the plot layout
+    var layout = {
+        title: "Top ten OTU's for each Subject",
+        xaxis: { title: "otu_values" },
+        yaxis: { title: "otu_ids" },
+        margin: {
+            l: 100,
+            r: 100,
+            t: 100,
+            b: 100,
+            h: 400
+        }
+    };
 
-
-
+    // Plot the chart to a div tag with id "bar-plot"
+    Plotly.newPlot("bar", data, layout);
+}
