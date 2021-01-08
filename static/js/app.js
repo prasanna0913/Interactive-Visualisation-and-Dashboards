@@ -28,10 +28,25 @@ function optionChanged(newSample) {
 
         //  data to build charts
         var samplesData = data.samples.filter(sample => sample.id === selectedId);
-        //  split first 10 records for creating charts
-        var otuIds = samplesData[0].otu_ids.slice(0, 10);
-        var otuValues = samplesData[0].sample_values.slice(0, 10);
+        console.log(samplesData)
+
+        // otu values in desc order and slice 10 
+        var sortedOtuValues = samplesData[0].sample_values.sort((a, b) => b - a);
+        var otuValues = sortedOtuValues.slice(0, 10);
+        console.log(otuValues)
+
+        var sortedOtuids = samplesData[0].otu_ids.sort((a, b) => b - a);
+        var stringOtuIds = sortedOtuids.map(id => {
+            return id.toString()
+        });
+        var otuIds = stringOtuIds.slice(0, 10);
+        console.log(otuIds)
+
+
+
         var otuLabels = samplesData[0].otu_labels.slice(0, 10);
+        console.log(otuLabels)
+
         buildCharts(metaData, otuIds, otuValues, otuLabels)
     });
 
@@ -58,6 +73,7 @@ function buildCharts(selectedMetaData, otuIds, otuValues, otuLabels) {
     var trace1 = {
         x: otuValues,
         y: otuIds,
+        text: otuLabels,
         type: "bar",
         orientation: "h"
 
