@@ -37,7 +37,7 @@ function optionChanged(newSample) {
 
         var sortedOtuids = samplesData[0].otu_ids.sort((a, b) => b - a);
         var stringOtuIds = sortedOtuids.map(id => {
-            return id.toString()
+            return `otu ${id}`
         });
         var otuIds = stringOtuIds.slice(0, 10);
         console.log(otuIds)
@@ -71,9 +71,9 @@ function buildMetadata(selectedMetaData) {
 function buildCharts(selectedMetaData, otuIds, otuValues, otuLabels) {
     //  bar chart
     var trace1 = {
-        x: otuValues,
-        y: otuIds,
-        text: otuLabels,
+        x: otuValues.reverse(),
+        y: otuIds.reverse(),
+        text: otuLabels.reverse(),
         type: "bar",
         orientation: "h"
 
