@@ -37,5 +37,7 @@
 On selecting the subject ID number from the dropdown menu, corresponding Demographics Information, Bar graph, Bubble charts and Gauge charts are displayed.
 Demographics Info:
 ![Selected Subject Id](./screenshots/demographics_info.png)
+![Bar chart of Selected Subject Id](./screenshots/bar_chart.png)
+![Bubble chart of Selected Subject Id](./screenshots/bubble_chart.png)
 
 
