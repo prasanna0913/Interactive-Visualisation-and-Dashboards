@@ -34,10 +34,17 @@
     * Gauge Chart representing the wash frequency of an individual.  
 
 ## Show examples of usage:
-On selecting the subject ID number from the dropdown menu, corresponding Demographics Information, Bar graph, Bubble charts and Gauge charts are displayed.
-Demographics Info:
-![Selected Subject Id](./screenshots/demographics_info.png)
-![Bar chart of Selected Subject Id](./screenshots/bar_chart.png)
-![Bubble chart of Selected Subject Id](./screenshots/bubble_chart.png)
+On selecting the subject ID number from the dropdown menu, corresponding Demographics Information, Bar graph, Bunbble charts are displayed.
+ * Demographics Info:
+ ![Selected Subject Id](./screenshots/demographics_info.png)
+ * Bar chart:
+ ![Bar chart of Selected Subject Id](./screenshots/bar_chart.png)
+ * Bubble chart:
+ ![Bubble chart of Selected Subject Id](./screenshots/bubble_chart.png)
+ * Gauge Chart:
+
+
+
+
 
 
