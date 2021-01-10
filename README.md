@@ -36,7 +36,7 @@
 ## Show examples of usage:
 On selecting the subject ID number from the dropdown menu, corresponding Demographics Information, Bar graph, Bunbble charts are displayed.
 
- * Demographics Info:
+ * Upon selecting the 'Test Subject ID No', corresponding data is displayed in the form of charts. 
  ![All the graphs and info of Selected Subject Id](./screenshots/belly_button_biodiversity.png)
  
 
