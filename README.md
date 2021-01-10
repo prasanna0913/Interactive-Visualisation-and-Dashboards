@@ -33,6 +33,9 @@
     * Bubble chart representing sample values of each selected subject. 
     * Gauge Chart representing the wash frequency of an individual.  
 
-
+## Show examples of usage:
+On selecting the subject ID number from the dropdown menu, corresponding Demographics Information, Bar graph, Bubble charts and Gauge charts are displayed.
+Demographics Info:
+![Selected Subject Id](./screenshots/demographics_info.png)
 
 
