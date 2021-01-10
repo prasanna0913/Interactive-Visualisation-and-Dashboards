@@ -5,6 +5,7 @@
 *	Technologies
 *	Features
 *	Setup
+*	Code examples
 *	Status
 *	Contact
 
@@ -38,6 +39,12 @@ On selecting the subject ID number from the dropdown menu, corresponding Demogra
 
  * Upon selecting the 'Test Subject ID No', corresponding data is displayed in the form of charts. 
  ![All the graphs and info of Selected Subject Id](./screenshots/belly_button_biodiversity.png)
+
+ # Status
+Project is finished
+
+# Contact
+D. Sai Prasanna
  
 
 
