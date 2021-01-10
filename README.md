@@ -37,7 +37,7 @@
 On selecting the subject ID number from the dropdown menu, corresponding Demographics Information, Bar graph, Bunbble charts are displayed.
 
  * Demographics Info:
- ![Selected Subject Id](./screenshots/belly_buttob_biodiversity_dashboard.png)
+ ![All the graphs and info of Selected Subject Id](./screenshots/belly_button_biodiversity.png)
  
 
 
