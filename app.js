@@ -10,6 +10,7 @@ function init() {
         for (var i = 0; i < data.names.length; i++) {
             dropdownoption.append("option").text(data.names[i]);
         }
+        optionChanged(data.names[0])
     });
 }
 
