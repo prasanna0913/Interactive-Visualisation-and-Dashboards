@@ -40,6 +40,9 @@ On selecting the subject ID number from the dropdown menu, corresponding Demogra
  * Upon selecting the 'Test Subject ID No', corresponding data is displayed in the form of charts. 
  ![All the graphs and info of Selected Subject Id](./screenshots/belly_button_biodiversity.png)
 
+# Links:
+* Github deployment link: https://prasanna0913.github.io/Interactive-Visualisation-and-Dashboards/ 
+
  # Status
 Project is finished
 
